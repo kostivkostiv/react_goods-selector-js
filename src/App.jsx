@@ -41,8 +41,8 @@ export const App = () => {
                 selectedGood === good ? 'has-background-success-light' : ''
               }
             >
-              <td>
                 {selectedGood !== good && (
+              <td>
                   <button
                     data-cy="AddButton"
                     type="button"
@@ -51,11 +51,11 @@ export const App = () => {
                   >
                     +
                   </button>
-                )}
               </td>
+                )}
 
-              <td>
                 {selectedGood === good && (
+              <td>
                   <button
                     data-cy="RemoveButton"
                     type="button"
@@ -64,8 +64,8 @@ export const App = () => {
                   >
                     -
                   </button>
+              </td>
                 )}
-            </td>
 
               <td data-cy="GoodTitle" className="is-vcentered">
                 {good}
